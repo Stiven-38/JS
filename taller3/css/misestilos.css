@@ -1,0 +1,18 @@
+div#respuesta{
+    display: none;
+}
+.caja{
+    width: 500px;
+    height: 80px;
+    position: sticky;
+    top: 30px; left: 400px;
+}
+h1{
+    color: #65b9c0dd;
+    
+}
+
+body {
+    background-color: #c5c5c5;
+}
+
