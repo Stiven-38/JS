@@ -1,0 +1,32 @@
+/* div#respuesta{
+    display: none;
+}
+    .caja{
+        width: 300px;
+        height: 80px;
+        top: 30px; left: 400px;
+    }
+
+input{
+    margin-top: 10px;
+}
+
+body {
+    background-color: rgba(47, 51, 162, 0.936);
+    text-align: center;
+}
+
+h1{ 
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+}
+
+button{
+    background-color: rgb(114, 114, 114);
+    column-rule-color: rgb(15, 14, 14);
+    margin-top: 10px;
+}
+
+.form-select{
+    margin-top: 10px;
+} */
