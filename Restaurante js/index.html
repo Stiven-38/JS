@@ -1,63 +1,69 @@
-<!-- <!DOCTYPE html>
+<!-- Definición del tipo de documento y versión de HTML utilizado -->
+<!DOCTYPE html>
 <html>
+
 <head>
+    <!-- Especifica la codificación de caracteres utilizada -->
     <meta charset="UTF-8">
+
+    <!-- Ajusta la vista de la página según el tamaño del dispositivo y establece el nivel de zoom inicial -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="js/restaurante.js">
+
+    <!-- Enlace al archivo de estilos CSS externo -->
     <link rel="stylesheet" href="estilos/estilos.css">
+
+    <!-- Enlace al archivo de JavaScript externo. El atributo "defer" asegura que el script se ejecute después de que el HTML esté completamente cargado -->
+    <script src="js/restaurante.js" defer></script>
+
+    <!-- Título que se mostrará en la pestaña del navegador -->
     <title>Restaurante Virtual</title>
 </head>
+
 <body>
-    <h1 > Calculadora  Restaurante</h1>
+    <!-- Título principal de la página -->
+    <h1>Calculadora Restaurante</h1>
+
+    <!-- Etiqueta que describe el siguiente elemento de entrada/select -->
     <label for="tipoPlato">Tipo de Plato:</label>
+
+    <!-- Lista desplegable para que el usuario seleccione un tipo de plato -->
     <select id="tipoPlato">
-        <option value="Plato1">Ajiaco</option>
-        <option value="Plato2">Arroz paisa</option>
-        <option value="Plato3">Caldo Costilla</option>
+        <option value="Ajiaco">Ajiaco</option>
+        <option value="Arroz paisa">Arroz paisa</option>
+        <option value="Caldo Costilla">Caldo Costilla</option>
     </select>
     <br>
+
+    <!-- Etiqueta que describe el siguiente elemento de entrada -->
     <label for="cantidadPlatos">Cantidad de Platos:</label>
-    <input type="number" id="cantidadPlatos"> </br>
+
+    <!-- Campo de entrada para que el usuario indique cuántos platos quiere -->
+    <input type="number" id="cantidadPlatos"> 
     <br>
-    <label for "bebida">Bebida:</label>
+
+    <!-- Etiqueta que describe el siguiente elemento de entrada/select -->
+    <label for="bebida">Bebida:</label>
+
+    <!-- Lista desplegable para que el usuario seleccione una bebida -->
     <select id="bebida">
-        <option value="Bebida1">Gaseosa</option>
-        <option value="Bebida2">Limonada</option>
-        <option value="Bebida3">Jugo Naranja</option>
+        <option value="Gaseosa">Gaseosa</option>
+        <option value=" Limonada">Limonada</option>
+        <option value=" Jugo Naranja">Jugo Naranja</option>
     </select>
     <br>
+
+    <!-- Etiqueta que describe el siguiente elemento de entrada -->
     <label for="cantidadBebidas">Cantidad de Bebidas:</label>
+
+    <!-- Campo de entrada para que el usuario indique cuántas bebidas quiere -->
     <input type="number" id="cantidadBebidas">
     <br>
+
+    <!-- Botón que, al hacer clic, invocará la función "calcularTotal()" -->
     <button onclick="calcularTotal()">Calcular Total</button>
+
+    <!-- Parrafo donde se mostrará el resultado del cálculo -->
     <p id="resultado"></p>
-
-    <script>
-        function calcularTotal() {
-            var tipoPlato = document.getElementById("tipoPlato").value;
-            var cantidadPlatos = parseInt(document.getElementById("cantidadPlatos").value);
-            var bebida = document.getElementById("bebida").value;
-            var cantidadBebidas = parseInt(document.getElementById("cantidadBebidas").value);
-
-            var preciosPlatos = {
-                "Plato1": 40000,
-                "Plato2": 35000,
-                "Plato3": 15000
-            };
-
-            var precioBebida = {
-                "Bebida1": 3000,
-                "Bebida2": 2500,
-                "Bebida3": 2000
-            };
-
-            var totalPlatos = preciosPlatos[tipoPlato] * cantidadPlatos;
-            var totalBebidas = precioBebida[bebida] * cantidadBebidas;
-            var total = totalPlatos + totalBebidas;
-
-            var resultado = document.getElementById("resultado");
-            resultado.textContent = "Total a pagar: $" + total;
-        }
-    </script>
 </body>
-</html> -->
+
+</html>
